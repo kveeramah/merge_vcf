@@ -24,6 +24,6 @@ e.g.
 
 to run type:
 
-merge_vcf.py <SNP_bedfile> list_of_emit_alls> <reference genome>
+merge_vcf.py <SNP_bedfile> list_of_emit_alls> <reference genome>  <reference genome>
 
 Output will be a merged vcf.gz file.
