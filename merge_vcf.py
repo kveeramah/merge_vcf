@@ -13,14 +13,13 @@
 ##../84005_LCT.RG.LCT.bed.aDNA.emit_all.vcf	samp_84005
 ###to run type:
 ##merge_vcf.py <SNP_bedfile> list_of_emit_alls> <reference genome>
-##Output will be a merged vcf.gz file.
+##Output will be a merged vcf file.
 
 import gzip
 import string
 import pysam
 import numpy as np
 import math
-import gzip
 from sys import argv
 
 
@@ -89,7 +88,7 @@ for g in range(len(data)):
         elif all2==ref_all:
             snps[key]=[k[0],k[2],[all2,all1],k[5]]
 
-fileout=gzip.open(samp_list_file+'.vcf.gz','w')
+fileout=open(samp_list_file+'.vcf','w')
 
 
 ###set up output headers
